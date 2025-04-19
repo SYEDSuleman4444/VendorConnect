@@ -1,0 +1,118 @@
+/* Global Form Styles */
+form {
+    width: 60%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9); /* Transparent white background */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 30px 40px;
+    font-family: "Arial", sans-serif;
+    transition: all 0.4s ease; 
+  }
+  
+  form:hover {
+    transform: scale(1.02); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  }
+  
+  form h2 {
+    color: crimson;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Georgia", serif;
+  }
+  
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: crimson;
+    outline: none;
+    box-shadow: 0 0 5px crimson;
+  }
+  
+  button:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: none;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers all child elements horizontally */
+  }
+  
+  button {
+    margin-top: 20px; /* Adds spacing above the button */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(246, 244, 245);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #979090;
+    transform: scale(1.1);
+  }
+  
+  /* Form-specific Container */
+  .form-container {
+    background: linear-gradient(
+      135deg,
+      rgba(240, 248, 255, 0.8),
+      rgba(255, 182, 193, 0.8)
+    ); /* Subtle gradient */
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Success or Error Messages */
+  .success-message,
+  .error-message {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+  
+  .success-message {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
